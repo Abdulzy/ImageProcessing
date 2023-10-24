@@ -24,7 +24,7 @@ A couple of other classes were also started in the features list.
 
 # High level diagram of project
 
-![alt text](https://github.com/Abdulzy/ImageProcessing/blob/master/res/project%20UML.pdf?raw=true)
+![alt text](https://github.com/Abdulzy/ImageProcessing/blob/master/res/UML.png?raw=true)
 
 
 # How To Run
