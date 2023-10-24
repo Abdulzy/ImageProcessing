@@ -24,7 +24,7 @@ A couple of other classes were also started in the features list.
 
 # List Of Features
 
-##Features Interface
+## Features Interface
 ```java
 /**
    * Sets the view of the controller.
@@ -94,7 +94,7 @@ A couple of other classes were also started in the features list.
   /** Informs user how to use use a restrict the colors.*/
   void paletteHelp();
 ```
-##View Interface
+## View Interface
 ```java
   /** Makes the view visible. */
   void start();
@@ -207,7 +207,7 @@ A couple of other classes were also started in the features list.
   List<int[]> selectedColors();
 ```
 
-##MenuBar Interface
+## MenuBar Interface
 ```java
   /**
    * Connects the menu to the feature object, which tends to be a controller.
@@ -217,7 +217,7 @@ A couple of other classes were also started in the features list.
   void setFeatures(Features controller);
 ```
 
-##Controller Interface
+## Controller Interface
 ```java
   /**
    * Starts the controller and runs the program.
@@ -228,7 +228,7 @@ A couple of other classes were also started in the features list.
   void start(ImageModel image) throws IOException;
 ```
 
-##ImageModel Interface
+## ImageModel Interface
 ```java
   /**
    * Grey scales an image that is passed as an array, returns a grey scaled version of the array.
@@ -362,7 +362,7 @@ A couple of other classes were also started in the features list.
   void restrictColor(List<int[]> colors);
 ```
 
-##Filters Interface
+## Filters Interface
 ```java
   /**
    * Blurs an image that is passed as an array, returns a blurred version of the array.
@@ -387,7 +387,7 @@ A couple of other classes were also started in the features list.
   int[][][] sharpen(int[][][] arr, int intensity);
 ```
 
-##Transforms Interface
+## Transforms Interface
 ```java
   /**
    * Grey scales an image that is passed as an array, returns a grey scaled version of the array.
@@ -421,7 +421,7 @@ A couple of other classes were also started in the features list.
   int[][][] reduceColourDensity(int[][][] arr, int factor);
 ```
 
-##Chunks Interface
+## Chunks Interface
 ```java
   /**
    * Adds the mosaic effect to an image that is passed as an array, returns a mosaic version of the
@@ -494,7 +494,7 @@ A couple of other classes were also started in the features list.
   int[][][] restrict(List<int[]> colors);
 ```
 
-##SupportMethod Interface
+## SupportMethod Interface
 ```java
     /**
    * Clamps a value from going pass the specified range.
@@ -532,11 +532,11 @@ Using the functionality of any specific class follow the format of "object name 
 Looking at the ExampleRun1.txt file you can see how to create objets for specific classes. 
 It can be run with different images if you want a range of results.
 
-##Version2
+## Version2
 With the updated implementation, have added more example runs to show the full functionality of my implementation.
 Using the "project4.jar" you can follow the ExampleRun2.txt from Version2 in "Description of Example Runs".
 
-##Version3
+## Version3
 For the final part of the project i have implemented 2 different controllers. The first controller "BasicController" runs the btachfiles.
 Just follow Version2 above for how to do that. The second controller, "FeatureController", is more interactive which allows for communication between user and program.
 To use the interactive controller you can use the ExampleRun3.txt from Version3 in "Description of Example Runs".
@@ -556,7 +556,7 @@ Run 1 -- Filename: ExampleRun1.txt:
 8. Repeated all the previous steps on a different image
 9. Print message of completion.
 
-##Version2 of the project
+## Version2 of the project
 
 saved as project4.jar
 
@@ -568,7 +568,7 @@ Run 1 -- Filename: ExampleRun2.txt:
 
 
 
-##Version3 of the project
+## Version3 of the project
 
 saved as project5.jar
 
@@ -589,7 +589,7 @@ Leaving space for modification if a user would like to make a different implemen
 Added private method to both abstract classes, which are multiply and duplicate.
 My ImageDriver(driver class) just shows how the code is run was previously named modification.
 
-##version2
+## version2
 Added extra arguments to the "start" method of the controller.
 Removed the link between the Filters, Transforms, and Imagemodel interfaces.
 added the method call of all the methods from the Filters, Transforms, and Chunks interfaces into the ImageModel interface.
@@ -600,7 +600,7 @@ Extracted some duplicated methods and made them into an interface called Support
 BasicMethod class which is extended by Filters, Transforms, and Chunks classes.
 Added a couple of methods to multiple classes.
 
-##version3
+## version3
 Refactored my imageModel, and made my model contain an image field.
 Added more functionality to the model to encapsulate the full functionality of the requirements.
 
@@ -614,7 +614,7 @@ The user's file would be named appropriately for the controller class.
 method names are accurate in the file used in the controller class, with the right arguments also.
 Every image is saved as .PNG and files are saved in .txt.
 
-##Version3
+## Version3
 To display the symbol on the image was to display it on the legend.
 
 
@@ -626,7 +626,7 @@ The user has to use names that are listed in the controller class to use method 
 The batch file for using the controller must always be in the project folder.
 The name of the .jar file might affect the code.
 
-##Version3
+## Version3
 Legend Buttons would always be active but it doesn't affect computation.
 Images don't cover the whole pane for some images and extend for other images that can be scrolled.
 Wasn't able to complete the extra credit 3.
