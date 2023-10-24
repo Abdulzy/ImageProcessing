@@ -1,0 +1,136 @@
+#ExampleRun 1 of controllerDriver model
+
+## CODE
+```java
+package images;
+import java.io.FileReader;
+import java.io.IOException;
+
+/**
+ * Driver class of my project. To show how my code works.
+ */
+public class ControllerMain {
+
+  /**
+   * Main method to help run the code.
+   *
+   * @param args args
+   * @throws IOException if the file isn't found
+   */
+  public static void main(String[] args) throws IOException {
+
+    Readable reader = new FileReader(args[0]);
+    ImageModel model = new BasicModel();
+    Controllers control = new BasicController(reader,System.out);
+    control.start(model);
+    Readable readerTwo = new FileReader(args[1]);
+    Controllers controlTwo = new BasicController(readerTwo,System.out);
+    controlTwo.start(model);
+  }
+}
+
+```
+
+##RESULT
+load ran successfully
+mosaic ran successfully
+save ran successfully
+load ran successfully
+pixelate ran successfully
+save ran successfully
+load ran successfully
+pattern ran successfully
+save ran successfully
+load ran successfully
+mosaic ran successfully
+save ran successfully
+load ran successfully
+pixelate ran successfully
+save ran successfully
+load ran successfully
+pattern ran successfully
+save ran successfully
+load ran successfully
+blur ran successfully
+save ran successfully
+load ran successfully
+blur ran successfully
+save ran successfully
+load ran successfully
+sharpen ran successfully
+save ran successfully
+load ran successfully
+sharpen ran successfully
+save ran successfully
+load ran successfully
+grey ran successfully
+save ran successfully
+load ran successfully
+grey ran successfully
+save ran successfully
+load ran successfully
+sepia ran successfully
+save ran successfully
+load ran successfully
+sepia ran successfully
+save ran successfully
+load ran successfully
+dither ran successfully
+save ran successfully
+load ran successfully
+dither ran successfully
+save ran successfully
+program is done running
+load ran successfully
+mosaic ran successfully
+save ran successfully
+load ran successfully
+pixelate ran successfully
+save ran successfully
+load ran successfully
+grey ran successfully
+pattern ran successfully
+save ran successfully
+load ran successfully
+mosaic ran successfully
+save ran successfully
+load ran successfully
+pixelate ran successfully
+save ran successfully
+load ran successfully
+sepia ran successfully
+pattern ran successfully
+save ran successfully
+load ran successfully
+blur ran successfully
+save ran successfully
+load ran successfully
+blur ran successfully
+save ran successfully
+load ran successfully
+sharpen ran successfully
+save ran successfully
+load ran successfully
+sharpen ran successfully
+save ran successfully
+load ran successfully
+grey ran successfully
+save ran successfully
+load ran successfully
+grey ran successfully
+save ran successfully
+load ran successfully
+sepia ran successfully
+save ran successfully
+load ran successfully
+sepia ran successfully
+save ran successfully
+load ran successfully
+dither ran successfully
+save ran successfully
+load ran successfully
+dither ran successfully
+save ran successfully
+program is done running
+
+The code is done running, all effects have been applied to the images.

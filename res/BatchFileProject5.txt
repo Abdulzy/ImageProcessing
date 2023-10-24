@@ -1,0 +1,3 @@
+load face.PNG
+mosaic 2000
+save faceMosaic2.PNG

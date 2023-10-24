@@ -1,0 +1,50 @@
+load face.PNG
+mosaic 6500
+save faceMosaic2.PNG
+load face.PNG
+pixelate 50
+save facePixelate2.PNG
+load face.PNG
+grey
+pattern 
+save facePattern2.txt
+load gizzard.PNG
+mosaic 6500
+save gizzardMosaic2.PNG
+load gizzard.PNG
+pixelate 50
+save gizzardPixelate2.PNG
+load gizzard.PNG
+sepia
+pattern 
+save gizzardPattern2.txt
+load face.PNG
+blur
+save faceBlur2.PNG
+load gizzard.PNG
+blur
+save gizzardBlur2.PNG
+load face.PNG
+sharpen
+save faceSharpen2.PNG
+load gizzard.PNG
+sharpen
+save gizzardSharpen2.PNG
+load face.PNG
+grey
+save faceGrey2.PNG
+load gizzard.PNG
+grey
+save gizzardGrey2.PNG
+load face.PNG
+sepia
+save faceSepia2.PNG
+load gizzard.PNG
+sepia
+save gizzardSepia2.PNG
+load face.PNG
+dither 8
+save faceDither2.PNG
+load gizzard.PNG
+dither 8
+save gizzardDither2.PNG

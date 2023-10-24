@@ -1,0 +1,62 @@
+#ExampleRun 1 of imageDriver model
+
+## CODE
+package images;
+
+import java.io.File;
+import java.io.IOException;
+
+public class ImageDriver {
+  public static void main(String []args) throws IOException {
+
+    //First Image Run
+    File fileLoad = new File("");
+    String path = fileLoad.getAbsolutePath() + "\\res\\face.PNG";
+    Filters filter = new BasicFilter();
+    Transforms transform = new BasicTransform();
+    int[][][] prim = ImageUtilities.readImage(path);
+    int[][][] blurImage = filter.blur(prim,4);
+    int[][][] sharpenImage = filter.sharpen(prim,1);
+    int[][][] greyImage = transform.greyScale(prim);
+    int[][][] sepiaImage = transform.sepia(prim);
+    int[][][] reducedColour = transform.reduceColourDensity(prim,100);
+    ImageUtilities.writeImage(blurImage, blurImage[0].length,
+            blurImage.length, "blurImage.PNG");
+    ImageUtilities.writeImage(sharpenImage, sharpenImage[0].length,
+            sharpenImage.length, "sharpenImage.PNG");
+    ImageUtilities.writeImage(greyImage, greyImage[0].length,
+            greyImage.length, "greyImage.PNG");
+    ImageUtilities.writeImage(sepiaImage, sepiaImage[0].length,
+            sepiaImage.length, "sepiaImage.PNG");
+    ImageUtilities.writeImage(reducedColour, reducedColour[0].length,
+            reducedColour.length, "reducedColour.PNG");
+
+    //Second Image Run
+    String pathTwo = fileLoad.getAbsolutePath() + "\\res\\gizzard.PNG";
+    int[][][] prime = ImageUtilities.readImage(pathTwo);
+    int[][][] blurImageTwo = filter.blur(prime,6);
+    int[][][] sharpenImageTwo = filter.sharpen(prime,2);
+    int[][][] greyImageTwo = transform.greyScale(prime);
+    int[][][] sepiaImageTwo = transform.sepia(prime);
+    int[][][] reducedColourTwo = transform.reduceColourDensity(prime,254);
+    ImageUtilities.writeImage(blurImageTwo, blurImageTwo[0].length,
+            blurImageTwo.length, "blurImageTwo.PNG");
+    ImageUtilities.writeImage(sharpenImageTwo, sharpenImageTwo[0].length,
+            sharpenImageTwo.length, "sharpenImageTwo.PNG");
+    ImageUtilities.writeImage(greyImageTwo, greyImageTwo[0].length,
+            greyImageTwo.length, "greyImageTwo.PNG");
+    ImageUtilities.writeImage(sepiaImageTwo, sepiaImageTwo[0].length,
+            sepiaImageTwo.length, "sepiaImageTwo.PNG");
+    ImageUtilities.writeImage(reducedColourTwo, reducedColourTwo[0].length,
+            reducedColourTwo.length, "reducedColourTwo.PNG");
+
+    System.out.println("The code is done running, all effects have been applied to the images.");
+  }
+
+
+
+}
+
+##RESULT
+
+The code is done running, all effects have been applied to the images.
