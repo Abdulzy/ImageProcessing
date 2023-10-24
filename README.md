@@ -637,4 +637,9 @@ Wasn't able to complete the extra credit 3.
 # Image Citation
 I took these images by myself and I authorize the use of these images.
 
+#Preview
+## Initial
+![alt text](https://github.com/Abdulzy/ImageProcessing/blob/master/res/base%20image.png?raw=true)
+
+
 
